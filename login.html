@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="loginStyle.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <title>Log in form</title>
+</head>
+
+<body>
+  <div class="background">
+
+    <img src="images/background.png" alt="Background">
+
+  </div>
+  <div class="for">
+    <center>
+      <h3>Login Form</h3>
+      <form class="for2">
+        <label for="uname">Username</label><br>
+        <input type="text" id="uName" placeholder="Enter your Username" required><br>
+        <label for="psw">Password</label><br>
+
+        <input type="password" id="pass" placeholder="Enter your password" required><br>
+
+        <a href="#">Forgot Password?</a><br>
+        <a href="#" onclick="linkToSingUp()">Sign up</a>
+
+        <div class="sub">
+          <input onclick="myFunction()" type="submit" value="Submit">
+        </div>
+
+        <script type="text/javascript">
+
+          function myFunction() {
+            window.location.href = 'index.html';
+          }
+
+          function linkToSingUp() {
+            window.location.href = 'signUp.html'
+          }
+        </script>
+      </form>
+    </center>
+  </div>
+</body>
+
+</html>
